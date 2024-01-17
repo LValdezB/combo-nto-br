@@ -1,6 +1,11 @@
 UI.Separator()
 local scriptsPanelName = "Scripts"
 local ui = setupUI([[
+sPanel < Panel
+  margin: 10
+  layout:
+    type: verticalBox
+    
 Panel
   height: 50
   Button
@@ -15,6 +20,7 @@ Panel
 ui:setId(scriptsPanelName)
 
 local scriptsWindow = setupUI([[
+
 MainWindow
   !text: tr('Combo')
   size: 250 380
@@ -45,12 +51,8 @@ MainWindow
     anchors.bottom: parent.bottom
     size: 45 21
     margin-top: 15
-    margin-right: 1
+    margin-right: 1  
 ]], g_ui.getRootWidget())
-
-if not storage[scriptsPanelName] then
-    storage[scriptsPanelName] = {}
-end
 
 local rootWidget = g_ui.getRootWidget()
 if rootWidget then
@@ -62,10 +64,10 @@ if rootWidget then
         local scpPanel = g_ui.createWidget("sPanel") -- Creates Panel
         scpPanel:setId("panelButtons") -- sets ID
         tabBar:addTab("Vip 1", scpPanel)
-        local scpPanel2 = g_ui.createWidget("sPanel") -- Creates Panel
+        local scpPanel2 = g_ui.createWidget("sPanel")
         scpPanel2:setId("panelButtons") -- sets ID
-        tabBar:addTab("Vip 2", scpPanel)
-        local scpPanel3 = g_ui.createWidget("sPanel") -- Creates Panel
+        tabBar:addTab("Vip 2", scpPanel2)
+        local scpPanel3 = g_ui.createWidget("sPanel")
         scpPanel3:setId("panelButtons") -- sets ID
         tabBar:addTab("Vip 3", scpPanel3)
 
@@ -78,8 +80,235 @@ if rootWidget then
             end
         end, scpPanel)
         UI.Separator(scpPanel)
-
-        -- Add other macros and separators as needed
+        macro(200, "Itachi Drunk", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+         macro(200, "Itachi Lize", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+      macro(200, "Kakuzu", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+      macro(200, "Anbu", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+      macro(200, "Bee Stack", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+         
+         macro(200, "Bee No Stack", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)  
+         UI.Separator(scpPanel) 
+      
+         macro(200, "Kisame", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+         macro(200, "Minato Stack", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+         macro(200, "Minato No Stack", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel)
+         UI.Separator(scpPanel)
+      
+         macro(200, "Tobirama", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Tsunade Trap", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Tsunade", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Deidara", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Orochimaru", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Hashirama", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Jiraiya", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Raikage", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Konan", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel2)
+         UI.Separator(scpPanel2)
+      
+         macro(200, "Sasori", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel3)
+         UI.Separator(scpPanel3)
+      
+         macro(200, "Guy", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel3)
+         UI.Separator(scpPanel3)
+      
+         macro(200, "Hiruzen", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel3)
+         UI.Separator(scpPanel3)
+      
+         macro(200, "Nagato", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel3)
+         UI.Separator(scpPanel3)
+      
+         macro(200, "Onoki", function()
+          if g_game.isAttacking() then
+          say('JUTSU1')
+          say('JUTSU2')
+          say('JUTSU3')
+          say('JUTSU4')
+         end
+         end, scpPanel3)
+         UI.Separator(scpPanel3)
     end
 
     scriptsWindow.closeButton.onClick = function(widget)
