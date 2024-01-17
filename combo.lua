@@ -57,7 +57,7 @@ macro(200, "Itachi Drunk", function()
    end, scpPanel)
    UI.Separator(scpPanel)
 
-   macro(200, "Itachi Lize", function()
+   macro(200, "Itachi Lize 400", function()
     if g_game.isAttacking() then
     say('JUTSU1')
     say('JUTSU2')
