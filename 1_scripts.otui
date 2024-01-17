@@ -1,0 +1,42 @@
+
+
+sPanel < Panel
+  margin: 10
+  width: 100
+  layout:
+    type: verticalBox
+
+ScriptsWindow < MainWindow
+  !text: tr('Combo')
+  size: 250 380
+  @onEscape: self:hide()
+
+  TabBar
+    id: tmpTabBar
+    margin-left: 45
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+
+
+  Panel
+    id: tmpTabContent
+    anchors.top: tmpTabBar.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 3
+    size: 200 280
+    image-source: /data/images/ui/panel_flat
+    image-border: 6
+
+  Button
+    id: closeButton
+    !text: tr('Close')
+    font: cipsoftFont
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    size: 45 21
+    margin-top: 15
+    margin-right: 1    
+
+
