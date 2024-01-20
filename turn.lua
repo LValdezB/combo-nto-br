@@ -6,7 +6,7 @@ function(icon, isOn)
 g_game.turn(0)
 end)
 turnN:breakAnchors()
-turnN:move(700, 350)
+turnN:move(725, 250)
 
 turnE = addIcon("EAST",
 {item = {id = 563, count = 1},
@@ -16,7 +16,7 @@ function(icon, isOn)
 g_game.turn(1)
 end)
 turnE:breakAnchors()
-turnE:move(750, 350)
+turnE:move(775, 250)
 
 turnS = addIcon("SOUTH",
 {item = {id = 563, count = 1},
@@ -26,7 +26,7 @@ function(icon, isOn)
 g_game.turn(2)
 end)
 turnS:breakAnchors()
-turnS:move(800, 350)
+turnS:move(825, 250)
 
 turnW = addIcon("WEST",
 {item = {id = 563, count = 1},
@@ -36,4 +36,4 @@ function(icon, isOn)
 g_game.turn(3)
 end)
 turnW:breakAnchors()
-turnW:move(850, 350)
+turnW:move(775, 250)
