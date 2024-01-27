@@ -148,7 +148,7 @@ if rootWidget then
         macro(100, 'Madara', function()
           if (Buff.time >= now) then return; end
           say(Buff.spell.Madara);
-        end, buffPanel);
+        end, buffPanel2);
         UI.Separator(buffPanel2)
         
         macro(100, 'Tobirama ML', function()
@@ -196,7 +196,7 @@ if rootWidget then
         macro(100, 'Sasori', function()
           if (Buff.time >= now) then return; end
           say(Buff.spell.Sasori);
-        end, buffPanel2);
+        end, buffPanel3);
         UI.Separator(buffPanel3)
         
         macro(100, 'GuyRed', function()
