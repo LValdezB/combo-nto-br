@@ -1,3 +1,4 @@
+setDefaultTab("Avail")
 ClosestStair = {};
 ClosestStair.tile = nil;
 ClosestStair.aditionalTiles = { 
