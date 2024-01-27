@@ -1,3 +1,4 @@
+setDefaultTab("Main")
 UI.Separator()
 local comboPanelName = "Combo"
 local ui = setupUI([[
