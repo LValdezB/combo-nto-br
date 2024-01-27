@@ -1,3 +1,4 @@
+setDefaultTab("Avail")
 ClosestJumpKamui = {};
 ClosestJumpKamui.tile = nil;
 ClosestJumpKamui.info = nil;
