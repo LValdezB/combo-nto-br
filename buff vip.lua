@@ -76,28 +76,29 @@ if rootWidget then
           spell = {
             Anbu = 'ninpou berserker',
             Itachi = 'fuumetsu sharingan',
-            Hidan = '',
-            Kakuzu = '',
-            Bee = '',
-            Kisame = '',
-            Minato = '',
-            Madara = '',
-            Tobirama = '',
-            Tsunade = '',
-            Deidara = '',
-            Orochimaru = '',
-            Hashirama = '',
-            Jiraya = '',
-            Raikage = '',
-            Konan  = '',
-            Sasori = '',
-            GuyRed = '',
-            GuyBlue = '',
-            GuyGreen = '',
-            Hiruzen = '',
-            Nagato = '',
-            Onoki = '',
-            Zetsu = '',
+            Hidan = 'Jashin Chikara',
+            Kakuzu = 'Doton Boei',
+            Bee = 'Doton Boei',
+            Kisame = 'Suiton Suijinheki',
+            Minato = 'Raiton Shunshin No Jutsu',
+            Madara = 'Susanooo',
+            Tobirama = 'Suiton Suijinheki',
+            TobiramaSpeed = 'Suiro no muchi',
+            Tsunade = 'Infuin Kai',
+            Deidara = 'Kinjutsu',
+            Orochimaru = 'Juinjutsu',
+            Hashirama = 'Senjutsu Kai',
+            Jiraya = 'Sennin Modo',
+            Raikage = 'Raiton Chakura Modo',
+            Konan  = 'Kami No Tsubasa',
+            Sasori = 'Karakuri Sandan',
+            GuyRed = 'Open Gates Of Death',
+            GuyBlue = 'Open Gates Of Wonder',
+            GuyGreen = 'Open Gates Of Life',
+            Hiruzen = 'Gogyo Kaiin',
+            Nagato = 'Yogen no Ko',
+            Onoki = 'Doton Keijuugan no Jutsu',
+            Zetsu = 'Kuroi Jushinki',
           },
            cooldown = 60 * 1000, 
            time = 0
@@ -148,11 +149,17 @@ if rootWidget then
           if (Buff.time >= now) then return; end
           say(Buff.spell.Madara);
         end, buffPanel);
-        UI.Separator(buffPanel)
+        UI.Separator(buffPanel2)
         
-        macro(100, 'Tobirama', function()
+        macro(100, 'Tobirama ML', function()
           if (Buff.time >= now) then return; end
           say(Buff.spell.Tobirama);
+        end, buffPanel);
+        UI.Separator(buffPanel)
+
+        macro(100, 'Tobirama Speed', function()
+          if (Buff.time >= now) then return; end
+          say(Buff.spell.TobiramaSpeed);
         end, buffPanel);
         UI.Separator(buffPanel)
         
@@ -190,7 +197,7 @@ if rootWidget then
           if (Buff.time >= now) then return; end
           say(Buff.spell.Sasori);
         end, buffPanel2);
-        UI.Separator(buffPanel2)
+        UI.Separator(buffPanel3)
         
         macro(100, 'GuyRed', function()
           if (Buff.time >= now) then return; end
@@ -253,6 +260,7 @@ if rootWidget then
           elseif (text ~= Buff.spell.Minato) then
           elseif (text ~= Buff.spell.Madara) then
           elseif (text ~= Buff.spell.Tobirama) then
+          elseif (text ~= Buff.spell.TobiramaSpeed) then
           elseif (text ~= Buff.spell.Tsunade) then
           elseif (text ~= Buff.spell.Deidara) then
           elseif (text ~= Buff.spell.Orochimaru) then
