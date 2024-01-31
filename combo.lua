@@ -107,9 +107,9 @@ if rootWidget then
       macro(200, "Anbu Trap", function()
           if g_game.isAttacking() then
           say('Ninpou Raiton Barrier')
-          say('Ninpou Suiton Suiryuudan')
           say('Raiton Shichuu Shibari')
           say('Mokuton Koshukeki')
+          say('Katon Habashiri')
          end
          end, scpPanel)
          UI.Separator(scpPanel)
