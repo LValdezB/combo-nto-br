@@ -89,7 +89,7 @@ if rootWidget then
             Temari = 'fuuton boei',
             Kankuro = 'ningyo no hogo',
             Kakashi = 'mangekyou sharingan',
-            Yamato = 'doton ga tentov',
+            Yamato = 'doton ga tento',
             Sai  = 'ninpou choujuu boei',
             Asuma = 'raigou senjusatsu',
             Kimimaro = 'karamatsu no mai',
