@@ -10,7 +10,7 @@ ClosestStair.ignoredTiles = { 7804 }
 ClosestStair.flags = { ignoreNonPathable = true, precision = 0, ignoreCreatures = false }
 ClosestStair.walkTime = now;
 ClosestStair.isWalking = false;
-ClosestStair.MAX_TILE_RANGE = 12;
+ClosestStair.MAX_TILE_RANGE = 7;
 
 local keyToPress = "Space";
 local core = modules.corelib;
