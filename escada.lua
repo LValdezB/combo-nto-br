@@ -4,13 +4,13 @@ ClosestStair.tile = nil;
 ClosestStair.aditionalTiles = { 
     1948, 1648, 1067, 595, 5293, 5542,  1648, 1678, 13296, 1646, 5111, 7771, 8657, 
     1680, 6264, 1664, 6262, 5291, 6905, 8265, 8263, 7727, 7725, 6896, 6207, 
-    8367, 8365, 5102, 1632, 1633, 6262, 1633, 1622, 1949
+    8367, 8365, 5102, 1632, 1633, 6262, 1633, 1622, 1949, 7804, 6205, 
 };
-ClosestStair.ignoredTiles = { 7804 }
+ClosestStair.ignoredTiles = {  }
 ClosestStair.flags = { ignoreNonPathable = true, precision = 0, ignoreCreatures = false }
 ClosestStair.walkTime = now;
 ClosestStair.isWalking = false;
-ClosestStair.MAX_TILE_RANGE = 7;
+ClosestStair.MAX_TILE_RANGE = 6;
 
 local keyToPress = "Space";
 local core = modules.corelib;
