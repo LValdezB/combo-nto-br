@@ -126,7 +126,7 @@ ClosestStair.macro = macro(100, 'Escada', function()
     ClosestStair.walkingTile = tile;
 end);
 
-ClosestStair.walkMacro = macro(1, function()
+ClosestStair.walkMacro = macro(200, function()
     if (ClosestStair.macro.isOff()) then return; end
     if (not ClosestStair.isWalking) then return; end
 
@@ -164,7 +164,7 @@ ClosestStair.walkMacro = macro(1, function()
     use(tileToUse:getTopUseThing());
 end);
 
-ClosestStair.tileFinderMacro = macro(50, function()
+ClosestStair.tileFinderMacro = macro(200, function()
     if (ClosestStair.macro.isOff()) then return; end
     if (currentPos and table.compare(currentPos, pos())) then
         return;
