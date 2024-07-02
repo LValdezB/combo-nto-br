@@ -105,7 +105,7 @@ local Directions = {
 }
 
 local movementKeys = { 'W', 'S', 'A', 'D', 'Up', 'Down', 'Left', 'Right' };
-ClosestStair.macro = macro(100, 'Escada', function()
+ClosestStair.macro = macro(200, 'Escada', function()
     if (ClosestStair.isWalking) then
         for _, value in ipairs(movementKeys) do
             if (modules.corelib.g_keyboard.isKeyPressed(value)) then
