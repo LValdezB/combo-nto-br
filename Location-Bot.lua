@@ -1,7 +1,3 @@
-
-
-
-
 local discordTimes = {}
 local webhook = "https://discord.com/api/webhooks/1257519709377794048/l7gO2vVB1U1KGb3XdrsAyPBqcPK2jcq9x5tV-ELo1a5qHcDwmRVeKWPLY1cu0qcT9Gkr" -- Url do Webhook
 
