@@ -105,7 +105,7 @@ local Directions = {
 }
 
 local movementKeys = { 'W', 'S', 'A', 'D', 'Up', 'Down', 'Left', 'Right' };
-ClosestStair.macro = macro(200, 'Escada', function()
+ClosestStair.macro = macro(100, 'Escada', function()
     if (ClosestStair.isWalking) then
         for _, value in ipairs(movementKeys) do
             if (modules.corelib.g_keyboard.isKeyPressed(value)) then
@@ -126,7 +126,7 @@ ClosestStair.macro = macro(200, 'Escada', function()
     ClosestStair.walkingTile = tile;
 end);
 
-ClosestStair.walkMacro = macro(200, function()
+ClosestStair.walkMacro = macro(100, function()
     if (ClosestStair.macro.isOff()) then return; end
     if (not ClosestStair.isWalking) then return; end
 
@@ -164,7 +164,7 @@ ClosestStair.walkMacro = macro(200, function()
     use(tileToUse:getTopUseThing());
 end);
 
-ClosestStair.tileFinderMacro = macro(200, function()
+ClosestStair.tileFinderMacro = macro(100, function()
     if (ClosestStair.macro.isOff()) then return; end
     if (currentPos and table.compare(currentPos, pos())) then
         return;
