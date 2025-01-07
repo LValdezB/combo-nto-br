@@ -1,11 +1,10 @@
 local discordTimes = {}
- -- insert your webhook link below
-local webhook = "https://discord.com/api/webhooks/1325236038603374735/vK7yWgcfxom-wtaW6kaePft9w8PM7CaNAqLjOBmuyZwyAFESGtDWFzoL2FeNTXHB66mU"
+local webhook = "https://discord.com/api/webhooks/1325981805731516537/_bqfEfKfdJBHN1491xkv6ep33S4pqCppkgPQwbhDRlnz9KsocrX9-3KtYFzKj5jX1luw"
 local default_data = {
-  username = "Comandante Hamilton", -- name discord displays the message from
+  username = "Senhor do Engenho",
 }
 local embed = {
-  color = 10038562, -- default color - dark red
+  color = 10038562, 
 }
 function onHTTPResult(data, err)
   if err then
@@ -17,7 +16,7 @@ local id = data.id
   if id then
     local dTime = discordTimes[id]
     if dTime and os.time() < dTime then return end
-    discordTimes[id] = os.time() + (0) -- delayed value or 10 seconds
+    discordTimes[id] = os.time() + (0)
   end
 
   local dEmbed = embed
